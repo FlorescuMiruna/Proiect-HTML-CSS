@@ -1,0 +1,215 @@
+header {
+    background-color: lightseagreen;
+    height: 100px;
+    width: 100%;
+}
+
+header img {
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    margin-top: 75px;
+    margin-right: 70px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 40px
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-size-adjust: 100;
+    object-position: center;
+    font-size: xx-large;
+}
+
+nav ul li a {
+    font-family: Arial;
+    font-size: medium;
+}
+
+body {
+    background-image: url("./alte_poze/brazi.jpg");
+    opacity: 50%;
+    background-size: cover;
+    opacity: 100%;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgba(199, 20, 20, 0.829);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+#paragraf {
+    opacity: 50%;
+    text-align: left;
+    background-origin: padding-box;
+    margin: 40px;
+    padding: 10ch;
+    border: 60px;
+    background-color: rgb(228, 227, 227);
+    page-break-inside: initial;
+    font-size: 10;
+    color: black;
+    font-weight: bolder;
+}
+
+.animatie {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    animation-name: animatia;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    transition-property: transform;
+}
+
+.animatie:hover {
+    transform: rotate(180deg);
+}
+
+@keyframes animatia {
+    0% {
+        left: 100px;
+        top: 100px;
+    }
+    25% {
+        left: 800px;
+        top: 400px;
+    }
+    50% {
+        left: 40px;
+        top: 200px;
+    }
+    75% {
+        left: 0px;
+        top: 70px;
+    }
+    100% {
+        left: 40px;
+        top: 50px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    header img {
+        margin-top: 10px;
+        margin-left: 50px;
+        height: 70px;
+        width: 70px;
+        float: left;
+    }
+    nav ul {
+        margin-top: 5px;
+        margin-right: 5px;
+        float: left;
+    }
+    nav ul li {
+        display: block;
+        margin-left: 40px
+    }
+    body {
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        background-color: lightseagreen;
+        height: 50px;
+        width: 100%;
+    }
+    header img {
+        margin-top: 10px;
+        margin-left: 50px;
+        height: 40px;
+        width: 40px;
+        float: left;
+    }
+    nav ul {
+        margin-top: 5px;
+        margin-right: 5px;
+        float: left;
+    }
+    nav ul li {
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    body {
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header {
+        height: 0%;
+        width: 0%;
+    }
+    header img {
+        margin-top: 10px;
+        margin-left: 50px;
+        height: 40px;
+        width: 40px;
+        float: left;
+    }
+    nav ul {
+        margin-top: 5px;
+        margin-right: 5px;
+        float: left;
+    }
+    a {
+        color: black;
+    }
+    body {
+        background-size: auto;
+    }
+}

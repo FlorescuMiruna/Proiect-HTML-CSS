@@ -1,0 +1,68 @@
+body {
+    margin: 40px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-image: url("./galerie/poza5.jpg");
+    background-size: cover;
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 22rem 25rem 25rem;
+    grid-template-rows: 30rem 30rem 30rem;
+    grid-template-areas: "header header header" "sidebar content content" "footer  footer  footer";
+    background-color: rgb(17, 16, 16);
+    background-color: lightpink;
+    color: #444;
+}
+
+.box {
+    background-color: rgb(184, 235, 232);
+    color: rgb(3, 149, 216);
+    border-radius: 5px;
+    font-size: 100%;
+    padding: 10px;
+}
+
+.header {
+    background-image: url("./galerie/poza4.jpg");
+    background-size: cover;
+    ;
+}
+
+body {
+    background-color: lightpink;
+    opacity: 50%;
+    background-size: cover;
+    opacity: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-size: auto;
+    }
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/font.ttf);
+}
+
+div {
+    font-family: myFirstFont;
+}

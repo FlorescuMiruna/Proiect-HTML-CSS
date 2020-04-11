@@ -1,0 +1,78 @@
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login {
+    background-color: #4CAF50;
+    color: white;
+    height: 50px;
+    width: 400px;
+    margin: 40px;
+    width: 400;
+    text-align: center;
+    padding: 10px;
+    margin-right: 400px;
+    margin-left: 400px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a {
+    object-position: center;
+    offset-position: center;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./alte_poze/brazi.jpg");
+    opacity: 50%;
+    background-size: cover;
+    opacity: 100%;
+}
+
+.animatie {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    animation-name: animatia;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    transition-property: transform;
+}
+
+.animatie:hover {
+    transform: rotate(180deg);
+}

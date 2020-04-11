@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+}
+
+div.galerie {
+    border: 1rem;
+    padding: 1rem;
+    margin: 1px;
+    float: left;
+}
+
+div.galerie:hover {
+    opacity: 50%;
+}
+
+div.galerie img {
+    width: 36rem;
+    height: 22rem;
+    position: relative;
+}
+
+@media screen and (max-width:800px) {
+    div.galerie img {
+        width: 70rem;
+        height: 50rem;
+        position: relative;
+    }
+}
